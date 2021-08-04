@@ -5,27 +5,6 @@ body {
   color: #7C7070;
 }
 
-.header_primary {
-  color: #EEEEEE;
-}
-
-.header_primary_main {
-  display: block;
-  font-weight: 500;
-  font-size: 5rem;
-  text-align: center;
-}
-
-.header_primary_sub {
-  display: block;
-  text-transform: lowercase;
-  letter-spacing: .5rem;
-  font-weight: 400;
-  font-size: 2.5rem;
-  text-align: center;
-  margin-bottom: 4rem;
-}
-
 .header_secondary {
   color: #7C7070;
   text-transform: uppercase;
@@ -55,6 +34,25 @@ header .hero-text_box {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+
+header .hero-text_box .hero-header_primary {
+  color: #EEEEEE;
+  display: block;
+  font-weight: 500;
+  font-size: 5rem;
+  text-align: center;
+}
+
+header .hero-text_box .hero-header_secondary {
+  color: #EEEEEE;
+  display: block;
+  text-transform: lowercase;
+  letter-spacing: .5rem;
+  font-weight: 400;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 4rem;
 }
 
 header .btn-box {
