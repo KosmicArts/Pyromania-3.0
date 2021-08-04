@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="72" height="63" viewBox="0 0 72 63">
+  <defs>
+    <style>
+      .cls-1, .cls-4 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        fill: none;
+      }
+
+      .cls-3, .cls-4 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <g id="hero_pyro_logo" data-name="hero pyro logo" transform="translate(-174 24)">
+    <g id="logo" transform="translate(0 -55)">
+      <g id="Group_1" data-name="Group 1" transform="translate(174 31)">
+        <path id="Polygon_1" data-name="Polygon 1" class="cls-1" d="M36,0l2.16,40.74L72,63,36,44.52,0,63,33.84,40.74Z"/>
+      </g>
+      <g id="Polygon_2" data-name="Polygon 2" class="cls-2" transform="translate(175 32)">
+        <path class="cls-3" d="M35,0,70,61H0Z"/>
+        <path class="cls-4" d="M 35 3.415916442871094 L 2.93536376953125 59.29999923706055 L 67.06463623046875 59.29999923706055 L 35 3.415916442871094 M 35 0 L 70 61 L 0 61 L 35 0 Z"/>
+      </g>
+    </g>
+  </g>
+</svg>

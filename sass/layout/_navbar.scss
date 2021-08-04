@@ -1,0 +1,76 @@
+.logo{
+    margin-left: 10rem;
+    cursor: pointer;
+    height: 2.9rem;
+}
+
+nav{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    padding: 4rem 1rem;
+
+    .nav_links{
+        margin-right: auto;
+        margin-left: 7rem;
+        list-style: none;
+
+        & li{
+            display: inline-block;
+            padding: 0 2rem;
+        }
+
+        &_items{
+            color: $color-white;
+            font-size: $default-fontSize;
+            text-decoration: none;
+            transition: all .2s;
+
+            & i{
+                font-size: 1.3rem;   
+            }
+
+            &:hover{
+                color: $color-lightGrey-2;
+            }
+        }
+    }
+
+    .acc-box{
+        margin-right: 10rem;
+        
+        .login{
+            color: $color-white;
+            text-decoration: none;
+            font-size: $default-fontSize;
+            font-weight: 700;
+            padding: 1rem 2rem;
+            margin-right: 1rem;
+            border-radius: 3rem;
+            transition: all .2s;
+    
+            &:hover{
+                color: $color-lightGrey-2;
+            }
+        }
+    
+        .signup{
+            color: $color-redOrange;
+            background-color: $color-white;
+            text-decoration: none;
+            font-size: $default-fontSize;
+            font-weight: 700;
+            padding: 1rem 2rem;
+            border-radius: 3rem;
+            transition: all .2s;
+    
+            &:hover{
+                background-color: $color-lightGrey-2;
+                color: $color-orange;
+            }
+            
+        }
+    }
+    
+}

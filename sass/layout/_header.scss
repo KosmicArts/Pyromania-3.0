@@ -1,0 +1,35 @@
+header{
+    position: relative;
+    height: 90vh;
+    background-image: linear-gradient(
+    to right bottom, 
+    rgba($color-orange, 0.9), 
+    rgba($color-red, 0.9)) , 
+    url("/imgs/bg-pattern-intro.svg");
+    background-size: 200rem;
+    background-position: top;
+    background-position-y: center;
+
+    border-bottom-left-radius: 10rem;
+
+    .hero-text_box{
+        position: absolute;
+        text-align: center;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .btn-box{
+        position: absolute;
+        transform: translate(-50%, -50%);
+        margin-top: 2rem;
+        left: 50%;
+        
+        &_cta{
+            margin-right: 2rem;
+        }
+        
+    }
+
+}
