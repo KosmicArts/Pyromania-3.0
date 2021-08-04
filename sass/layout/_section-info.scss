@@ -1,14 +1,29 @@
 .section-info{
+    position: relative;
+    margin: 0rem 15rem;
 
     &_image{
-        height: 90%;
+        position: absolute;
+        height: 80rem;
+        left: 100%;
+        top: 65%;
+        transform: translate(-50%, -50%);
     }
 
     &_header{
-
+        text-align: center;
+        color: $color-lightGrey-2;
+        margin-top: 15rem;
+        margin-bottom: 9rem;
     }
 
     &_subheader{
+        color: $color-lightGrey-2;
+        margin: 2rem 0rem;
+    }
+
+    &_paragraph{
+        
 
     }
 

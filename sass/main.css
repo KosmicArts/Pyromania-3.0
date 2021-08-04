@@ -6,7 +6,7 @@ body {
 }
 
 .header_primary {
-  font-size: 2.5rem;
+  font-size: 3.3rem;
   font-weight: 600;
 }
 
@@ -205,8 +205,30 @@ nav .acc-box .signup:hover {
   color: #FFC300;
 }
 
+.section-info {
+  position: relative;
+  margin: 0rem 15rem;
+}
+
 .section-info_image {
-  height: 90%;
+  position: absolute;
+  height: 80rem;
+  left: 100%;
+  top: 65%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.section-info_header {
+  text-align: center;
+  color: #515150;
+  margin-top: 15rem;
+  margin-bottom: 9rem;
+}
+
+.section-info_subheader {
+  color: #515150;
+  margin: 2rem 0rem;
 }
 
 .section-info_grid {
