@@ -5,9 +5,13 @@ body {
   color: #7C7070;
 }
 
+.header_primary {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
 .header_secondary {
   color: #7C7070;
-  text-transform: uppercase;
   font-weight: 600;
   font-size: 2.5rem;
 }
@@ -199,6 +203,32 @@ nav .acc-box .signup {
 nav .acc-box .signup:hover {
   background-color: #515150;
   color: #FFC300;
+}
+
+.section-info_image {
+  height: 90%;
+}
+
+.section-info_grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: "col1 col2";
+}
+
+.section-info_grid .info_col-1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: col1;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+}
+
+.section-info_grid .info_col-2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: col2;
 }
 
 *,

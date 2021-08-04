@@ -1,0 +1,47 @@
+.section-info{
+
+    &_image{
+        height: 90%;
+    }
+
+    &_header{
+
+    }
+
+    &_subheader{
+
+    }
+
+    // ============================================
+    // GRID SPECIFICATIONS
+    // ============================================
+
+    &_grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        grid-template-areas: "col1 col2";
+
+        .info_col-1{
+            grid-area: col1;
+            grid-template-rows: 1fr 1fr;
+
+            &_row-1{
+
+            }
+
+            &_row-2{
+
+            }
+
+        }
+
+        .info_col-2{
+            grid-area: col2;
+
+        }
+    }
+}
+
+
+
