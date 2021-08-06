@@ -88,7 +88,7 @@ header .btn-box_cta {
 }
 
 .btn_white:hover {
-  background-color: #515150;
+  background-color: #3d3d3d;
   color: #FFC300;
 }
 
@@ -165,7 +165,7 @@ nav .nav_links_items i {
 }
 
 nav .nav_links_items:hover {
-  color: #515150;
+  color: #3d3d3d;
 }
 
 nav .acc-box {
@@ -185,7 +185,7 @@ nav .acc-box .login {
 }
 
 nav .acc-box .login:hover {
-  color: #515150;
+  color: #3d3d3d;
 }
 
 nav .acc-box .signup {
@@ -201,25 +201,31 @@ nav .acc-box .signup {
 }
 
 nav .acc-box .signup:hover {
-  background-color: #515150;
+  background-color: #3d3d3d;
   color: #FFC300;
 }
 
 .section-info {
   position: relative;
-  margin: 0rem 15rem;
+  margin: 0rem 10rem;
 }
 
 .section-info_image {
   position: absolute;
-  height: 80rem;
-  left: 100%;
-  top: 65%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: 67rem;
+  left: 80%;
+  top: 58%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
 
 .section-info_header {
+  background: -webkit-gradient(linear, left top, right top, from(#FFC300), to(#FF0045));
+  background: linear-gradient(to right, #FFC300, #FF0045);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   text-align: center;
   color: #515150;
   margin-top: 15rem;
@@ -229,6 +235,10 @@ nav .acc-box .signup:hover {
 .section-info_subheader {
   color: #515150;
   margin: 2rem 0rem;
+}
+
+.section-info_paragraph {
+  margin-bottom: 7rem;
 }
 
 .section-info_grid {
@@ -245,6 +255,7 @@ nav .acc-box .signup:hover {
   grid-area: col1;
   -ms-grid-rows: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
+  margin-right: 10rem;
 }
 
 .section-info_grid .info_col-2 {

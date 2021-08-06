@@ -32,7 +32,7 @@ nav{
             }
 
             &:hover{
-                color: $color-lightGrey-2;
+                color: $color-darkGrey-1;
             }
         }
     }
@@ -51,7 +51,7 @@ nav{
             transition: all .2s;
     
             &:hover{
-                color: $color-lightGrey-2;
+                color: $color-darkGrey-1;
             }
         }
     
@@ -66,7 +66,7 @@ nav{
             transition: all .2s;
     
             &:hover{
-                background-color: $color-lightGrey-2;
+                background-color: $color-darkGrey-1;
                 color: $color-orange;
             }
             

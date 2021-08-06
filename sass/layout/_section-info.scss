@@ -1,16 +1,20 @@
 .section-info{
     position: relative;
-    margin: 0rem 15rem;
+    margin: 0rem 10rem;
 
     &_image{
         position: absolute;
-        height: 80rem;
-        left: 100%;
-        top: 65%;
+        object-fit: contain;
+        height: 67rem;
+        left: 80%;
+        top: 58%;
         transform: translate(-50%, -50%);
     }
 
     &_header{
+        background: linear-gradient(to right, $color-orange, $color-red);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
         text-align: center;
         color: $color-lightGrey-2;
         margin-top: 15rem;
@@ -23,7 +27,9 @@
     }
 
     &_paragraph{
-        
+        // fix this later because i dont want margin at the bottom of
+        // both paragraphs, only the first one.
+        margin-bottom: 7rem;
 
     }
 
@@ -40,6 +46,7 @@
         .info_col-1{
             grid-area: col1;
             grid-template-rows: 1fr 1fr;
+            margin-right: 10rem;
 
             &_row-1{
 
