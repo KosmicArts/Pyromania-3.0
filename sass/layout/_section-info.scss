@@ -5,8 +5,8 @@
     &_image{
         position: absolute;
         object-fit: contain;
-        height: 67rem;
-        left: 80%;
+        height: 60rem;
+        left: 77%;
         top: 58%;
         transform: translate(-50%, -50%);
     }
@@ -39,23 +39,13 @@
 
     &_grid{
         display: grid;
+        column-gap: 10rem;
         grid-template-columns: 1fr 1fr;
-
         grid-template-areas: "col1 col2";
 
         .info_col-1{
             grid-area: col1;
             grid-template-rows: 1fr 1fr;
-            margin-right: 10rem;
-
-            &_row-1{
-
-            }
-
-            &_row-2{
-
-            }
-
         }
 
         .info_col-2{

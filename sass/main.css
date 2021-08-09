@@ -214,8 +214,8 @@ nav .acc-box .signup:hover {
   position: absolute;
   -o-object-fit: contain;
      object-fit: contain;
-  height: 67rem;
-  left: 80%;
+  height: 60rem;
+  left: 77%;
   top: 58%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -244,6 +244,8 @@ nav .acc-box .signup:hover {
 .section-info_grid {
   display: -ms-grid;
   display: grid;
+  -webkit-column-gap: 10rem;
+          column-gap: 10rem;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
       grid-template-areas: "col1 col2";
@@ -255,7 +257,6 @@ nav .acc-box .signup:hover {
   grid-area: col1;
   -ms-grid-rows: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
-  margin-right: 10rem;
 }
 
 .section-info_grid .info_col-2 {
