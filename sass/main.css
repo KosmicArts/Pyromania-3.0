@@ -16,6 +16,12 @@ body {
   font-size: 2.5rem;
 }
 
+.header_teritary {
+  color: #7C7070;
+  font-weight: 600;
+  font-size: 2rem;
+}
+
 .paragraph {
   font-size: 1.8rem;
 }
@@ -263,6 +269,27 @@ nav .acc-box .signup:hover {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: col2;
+}
+
+.section-features {
+  margin: 0rem 10rem;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#FFC300), to(#FF0045));
+  background-image: linear-gradient(to right bottom, #FFC300, #FF0045);
+}
+
+.section-features .features-box {
+  background-color: #f3f2f2;
+  padding: 5rem;
+  text-align: center;
+  width: 40%;
+}
+
+.section-features .features-box_icon {
+  font-size: 5rem;
+}
+
+.section-features .features-box_header {
+  margin: 1.5rem 0rem;
 }
 
 *,

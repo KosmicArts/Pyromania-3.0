@@ -1,0 +1,54 @@
+.section-features{
+    margin: 0rem 10rem;
+    background-image: linear-gradient(
+        to right bottom, 
+        $color-orange, 
+        $color-red);
+
+    .features-box{
+        background-color: $color-lightGrey-0;
+        padding: 5rem;
+        text-align: center;
+        width: 40%;
+
+        &_icon{
+            font-size: 5rem;
+        }
+
+        &_header{
+            margin: 1.5rem 0rem;
+
+        }
+
+        &_paragraph{
+
+        }
+    }
+
+    // ============================================
+    // GRID SPECIFICATIONS
+    // ============================================
+
+    // &_grid{
+    //     display: grid;
+    //     // column-gap: 5rem;
+    //     grid-template-columns: 1fr 1fr 1fr 1fr;
+    //     grid-template-areas: "col1 col2 col3 col4";
+
+    //     &_col-1{
+    //         grid-area: col1;
+    //     }
+
+    //     &_col-2{
+    //         grid-area: col2;
+    //     }
+
+    //     &_col-3{
+    //         grid-area: col3;
+    //     }
+
+    //     &_col-4{
+    //         grid-area: col4;
+    //     }
+    // }
+}
