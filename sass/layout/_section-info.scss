@@ -1,21 +1,18 @@
 .section-info{
     position: relative;
     margin: 15rem 10rem;
+    // padding-left: 5rem;
 
     &_image{
         position: absolute;
-        width: 55%;
-        left: 90%;
+        width: 70%;
+        left: 93%;
         top: 57%;
         transform: translate(-50%, -50%);
     }
 
     &_header{
-        background: linear-gradient(to right, $color-orange, $color-red);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
         text-align: center;
-        color: $color-lightGrey-2;
         margin-bottom: 9rem;
     }
 

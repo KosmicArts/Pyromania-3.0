@@ -26,6 +26,11 @@
     box-sizing: border-box;
 }
 
+body{
+    overflow-x: hidden;
+    // overflow-y: hidden;
+}
+
 html{
     // Defines what 1rem equals
     font-size: 10px;

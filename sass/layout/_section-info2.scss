@@ -5,17 +5,13 @@
     &_image{
         position: absolute;
         width: 75%;
-        left: 5%;
+        left: 8%;
         top: 57%;
         transform: translate(-50%, -50%);
     }
 
     &_header{
-        background: linear-gradient(to right, $color-orange, $color-red);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
         text-align: center;
-        color: $color-lightGrey-2;
         margin-bottom: 9rem;
     }
 
