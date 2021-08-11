@@ -218,11 +218,9 @@ nav .acc-box .signup:hover {
 
 .section-info_image {
   position: absolute;
-  -o-object-fit: contain;
-     object-fit: contain;
-  height: 60rem;
+  width: 55%;
   left: 77%;
-  top: 58%;
+  top: 57%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
