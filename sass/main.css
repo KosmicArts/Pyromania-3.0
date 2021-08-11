@@ -219,7 +219,7 @@ nav .acc-box .signup:hover {
 .section-info_image {
   position: absolute;
   width: 55%;
-  left: 77%;
+  left: 90%;
   top: 57%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -340,6 +340,63 @@ nav .acc-box .signup:hover {
   -ms-grid-row: 1;
   -ms-grid-column: 4;
   grid-area: col4;
+}
+
+.section-info2 {
+  position: relative;
+  margin: 15rem 10rem;
+}
+
+.section-info2_image {
+  position: absolute;
+  width: 75%;
+  left: 5%;
+  top: 57%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.section-info2_header {
+  background: -webkit-gradient(linear, left top, right top, from(#FFC300), to(#FF0045));
+  background: linear-gradient(to right, #FFC300, #FF0045);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  color: #515150;
+  margin-bottom: 9rem;
+}
+
+.section-info2_subheader {
+  color: #515150;
+  margin: 2rem 0rem;
+}
+
+.section-info2_paragraph {
+  margin-bottom: 7rem;
+}
+
+.section-info2_grid {
+  display: -ms-grid;
+  display: grid;
+  -webkit-column-gap: 10rem;
+          column-gap: 10rem;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: "col1 col2";
+}
+
+.section-info2_grid .info2_col-1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: col1;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+}
+
+.section-info2_grid .info2_col-2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: col2;
 }
 
 *,

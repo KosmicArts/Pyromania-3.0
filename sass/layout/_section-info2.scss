@@ -1,11 +1,11 @@
-.section-info{
+.section-info2{
     position: relative;
     margin: 15rem 10rem;
 
     &_image{
         position: absolute;
-        width: 55%;
-        left: 90%;
+        width: 75%;
+        left: 5%;
         top: 57%;
         transform: translate(-50%, -50%);
     }
@@ -41,12 +41,12 @@
         grid-template-columns: 1fr 1fr;
         grid-template-areas: "col1 col2";
 
-        .info_col-1{
+        .info2_col-1{
             grid-area: col1;
             grid-template-rows: 1fr 1fr;
         }
 
-        .info_col-2{
+        .info2_col-2{
             grid-area: col2;
 
         }
