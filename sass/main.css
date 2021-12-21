@@ -402,9 +402,11 @@ nav .acc-box .signup:hover {
   grid-area: col2;
 }
 
-.section-info {
-  position: relative;
-  margin: 15rem 10rem;
+.footer {
+  margin-top: 27rem;
+  padding: 15rem 15rem;
+  border-top-right-radius: 10rem;
+  background-color: #3d3d3d;
 }
 
 *,
