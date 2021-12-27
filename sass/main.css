@@ -403,10 +403,32 @@ nav .acc-box .signup:hover {
 }
 
 .footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 55vh;
   margin-top: 27rem;
   padding: 15rem 15rem;
   border-top-right-radius: 10rem;
   background-color: #3d3d3d;
+}
+
+.foot_links {
+  font-size: 1.5rem;
+}
+
+.foot_links_header {
+  list-style-type: none;
+  color: #f3f2f2;
+  font-weight: 500;
+}
+
+.foot_links_items {
+  list-style-type: none;
 }
 
 *,

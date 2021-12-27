@@ -1,15 +1,41 @@
 .footer{
+    display: flex;
+    flex-direction: column;
+    
+    height: 55vh;
     margin-top: 27rem;
     padding: 15rem 15rem;
     border-top-right-radius: 10rem;
     background-color: $color-darkGrey-1;
 
+    &_logo_box{
+        // position: relative;
+        // top: 2rem;
+    }
+
 
     }
 
-    // .foot_links{
-        
-    // }
+    .foot_links{
+        // position: relative;
+        // display: flex;
+        // flex-direction: column;
+        // // margin-left: 50rem;
+        // left: 40rem;
+        // top: -20rem;
+        font-size: 1.5rem;
+
+        &_header{
+            list-style-type: none;
+            color: $color-lightGrey-0;
+            font-weight: 500;
+        }
+       
+        &_items{
+            list-style-type: none;
+        }
+
+    }
 
     // ============================================
     // GRID SPECIFICATIONS
