@@ -416,6 +416,24 @@ nav .acc-box .signup:hover {
   background-color: #3d3d3d;
 }
 
+.footer_logo {
+  cursor: pointer;
+  height: 2.9rem;
+}
+
+.footer_copyright {
+  font-size: 1rem;
+}
+
+.footer_link {
+  color: #f3f2f2;
+  text-decoration: none;
+}
+
+.footer_link:hover {
+  color: #ff7b00;
+}
+
 .footer .foot_links {
   list-style-type: none;
   font-size: 1.5rem;
@@ -423,7 +441,7 @@ nav .acc-box .signup:hover {
 
 .footer .foot_links_header {
   color: #f3f2f2;
-  margin-bottom: 2rem;
+  margin-bottom: 3.5rem;
   font-weight: 600;
 }
 
@@ -433,7 +451,7 @@ nav .acc-box .signup:hover {
 }
 
 .footer .foot_links_items:hover {
-  color: #f3f2f2;
+  color: #ff7b00;
 }
 
 .footer_grid {
@@ -450,14 +468,24 @@ nav .acc-box .signup:hover {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: col1;
-  -ms-grid-rows: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
 }
 
 .footer_grid .footer_col-2 {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: col2;
+}
+
+.footer_grid .footer_col-3 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: col3;
+}
+
+.footer_grid .footer_col-4 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 4;
+  grid-area: col4;
 }
 
 *,

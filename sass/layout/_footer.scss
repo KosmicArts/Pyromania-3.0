@@ -7,22 +7,40 @@
     border-top-right-radius: 10rem;
     background-color: $color-darkGrey-1;
 
+    &_logo{
+        cursor: pointer;
+        height: 2.9rem;
+    }
+
+    &_copyright{
+        font-size: 1rem;
+    }
+
+    &_link{
+        color: $color-lightGrey-0; 
+            text-decoration: none;
+
+        &:hover{
+            color: $color-redOrange;
+        }
+    }
+
     .foot_links{
         list-style-type: none;
         font-size: 1.5rem;
 
         &_header{
             color: $color-lightGrey-0;
-            margin-bottom: 2rem;
+            margin-bottom: 3.5rem;
             font-weight: 600;
         }
        
         &_items{
-            color: $color-lightGrey-1;
+            color: $color-lightGrey-1; 
             text-decoration: none;
 
             &:hover{
-                color: $color-lightGrey-0;
+                color: $color-redOrange;
             }
         }
 
@@ -40,11 +58,20 @@
 
         .footer_col-1{
             grid-area: col1;
-            grid-template-rows: 1fr 1fr;
         }
 
         .footer_col-2{
             grid-area: col2;
+
+        }
+
+        .footer_col-3{
+            grid-area: col3;
+
+        }
+
+        .footer_col-4{
+            grid-area: col4;
 
         }
     }
