@@ -427,11 +427,11 @@ nav .acc-box .signup:hover {
 
 .footer_link {
   color: #f3f2f2;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 .footer_link:hover {
-  color: #ff7b00;
+  color: #FFC300;
 }
 
 .footer .foot_links {
@@ -451,7 +451,7 @@ nav .acc-box .signup:hover {
 }
 
 .footer .foot_links_items:hover {
-  color: #ff7b00;
+  color: #FFC300;
 }
 
 .footer_grid {

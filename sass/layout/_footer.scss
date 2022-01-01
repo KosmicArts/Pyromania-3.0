@@ -18,10 +18,10 @@
 
     &_link{
         color: $color-lightGrey-0; 
-            text-decoration: none;
+        text-decoration: underline;
 
         &:hover{
-            color: $color-redOrange;
+            color: $color-orange;
         }
     }
 
@@ -40,7 +40,7 @@
             text-decoration: none;
 
             &:hover{
-                color: $color-redOrange;
+                color: $color-orange;
             }
         }
 
