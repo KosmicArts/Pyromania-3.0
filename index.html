@@ -18,18 +18,29 @@
         
 
         <header>
-            <nav>
+            <nav class="show-desktop hide-mobile">
                 <img src="./imgs/Pyromania.svg" alt="logo" class="logo">
-                <button class="hamburger" id="js_hamburger">
+                <!-- <button class="hamburger" id="js_hamburger">
                     <i>
                         
-                    </i>
+                    </i> -->
                 </button>
                 <ul class="nav_links">
-                    <li><a class="nav_links_items" href="#">Product <i class="fas fa-chevron-down"></i></a></li>
+                    <li><a class="nav_links_items" href="#">Product <i class="fas fa-chevron-down"></i></a>
+                        <ul class="nav_links_dropdown hide">
+                            <li><a class="nav_links_dropdown_items" href="#">Overview</i></a></li>
+                            <li><a class="nav_links_dropdown_items" href="#">Pricing</i></a></li>
+                            <li><a class="nav_links_dropdown_items" href="#">Marketplace</i></a></li>
+                            <li><a class="nav_links_dropdown_items" href="#">Features</i></a></li>
+                            <li><a class="nav_links_dropdown_items" href="#">Integrations </i></a></li>
+                        </ul>
+                    </li>
+
                     <li><a class="nav_links_items" href="#">Company <i class="fas fa-chevron-down"></i></a></li>
                     <li><a class="nav_links_items" href="#">Connect <i class="fas fa-chevron-down"></i></a></li>
                 </ul>
+
+                
                 <div class="acc-box">
                     <a href="" class="login">Login</a>
                     <a href="" class="signup">Sign Up</a>
