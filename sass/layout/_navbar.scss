@@ -21,24 +21,27 @@ nav{
             padding: 0 2rem;
         }
 
-        // &_dropdown{
-        //     background-color: $color-lightGrey-0;
-        //     margin: 0;
-        //     padding: 0;
-        //     display: flex;
-        //     flex-direction: column;
+        &_dropdown{
+            background-color: $color-lightGrey-0;
+            margin: 0;
+            padding: 1rem 0;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            position: absolute;
         
-        //     &_items{
-        //         color: $color-darkGrey-1;
-        //         font-size: $default-fontSize;
-        //         text-decoration: none;
-        //         transition: all .2s;
+            &_items{
+                color: $color-darkGrey-1;
+                font-size: $default-fontSize;
+                text-decoration: none;
+                transition: all .2s;
         
-        //         &:hover{
-        //             color: $color-redOrange;
-        //         }
-        //     }
-        // }
+                &:hover{
+                    background-color: $color-darkGrey-1;
+                    color: $color-redOrange;
+                }
+            }
+        }
 
         &_items{
             color: $color-white;
