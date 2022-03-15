@@ -16,32 +16,52 @@ nav{
         margin-left: 7rem;
         list-style: none;
 
+        &:hover ul{
+            opacity: 1;
+            visibility: visible;
+        }
+
         & li{
             display: inline-block;
             padding: 0 2rem;
         }
 
+
+        // ===============================================
+        // Dropdown Menu Styles ==========================
+        // ===============================================
+
         &_dropdown{
             background-color: $color-lightGrey-0;
+            border-radius: 0.5rem;
             margin: 0;
-            padding: 1rem 0;
+            width: 20rem;
+            padding: 1rem;
             display: flex;
             flex-direction: column;
             gap: 0.5rem;
             position: absolute;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity .2s;
         
             &_items{
-                color: $color-darkGrey-1;
-                font-size: $default-fontSize;
-                text-decoration: none;
+                border-radius: 0.5rem;
                 transition: all .2s;
+
+                & a{
+                    color: $color-darkGrey-1;
+                    font-size: $default-fontSize;
+                    text-decoration: none;
+                }
         
                 &:hover{
-                    background-color: $color-darkGrey-1;
-                    color: $color-redOrange;
+                    background-color: rgba($color-lightGrey-2, 0.1);
                 }
             }
         }
+
+        // ===============================================
 
         &_items{
             color: $color-white;
