@@ -26,7 +26,6 @@ nav{
             padding: 0 2rem;
         }
 
-
         // ===============================================
         // Dropdown Menu Styles ==========================
         // ===============================================
@@ -41,6 +40,7 @@ nav{
             flex-direction: column;
             gap: 0.5rem;
             position: absolute;
+
             opacity: 0;
             visibility: hidden;
             transition: opacity .2s;
