@@ -16,7 +16,7 @@ nav{
         margin-left: 7rem;
         list-style: none;
 
-        &:hover ul{
+        &_items:hover .nav_links_dropdown{
             opacity: 1;
             visibility: visible;
         }
@@ -76,6 +76,7 @@ nav{
             &:hover{
                 color: $color-darkGrey-1;
             }
+
         }
     }
 

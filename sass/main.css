@@ -166,7 +166,7 @@ nav .nav_links {
   list-style: none;
 }
 
-nav .nav_links:hover ul {
+nav .nav_links_items:hover .nav_links_dropdown {
   opacity: 1;
   visibility: visible;
 }
