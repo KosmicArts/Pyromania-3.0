@@ -63,7 +63,7 @@ nav{
 
         // ===============================================
 
-        &_items{
+        &_items .nav_a{
             color: $color-white;
             font-size: $default-fontSize;
             text-decoration: none;
