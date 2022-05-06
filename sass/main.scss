@@ -1,5 +1,7 @@
 @import "./abstracts/variables";
 
+@import "./abstracts/mixins";
+
 @import "./base/typography";
 
 @import "./layout/header";
@@ -35,7 +37,19 @@ body{
 
 html{
     // Defines what 1rem equals
-    font-size: 10px;
+    font-size: 62.5%;
+
+    @include respond(tab_land){  // width < 1200?
+        font-size: 56.25%;   // 1rem = 9px, 9/16 = 56.25%
+    }
+
+    @include respond(tab_port){  //width < 900?
+        font-size: 50%;      // 1rem = 8px, 8/16 = 50% 
+    }
+
+    @include respond(big_desktop){
+        font-size: 75%;     // 1rem = 12px, 12/16 = 75%
+    }
 }
 
 .hide{
