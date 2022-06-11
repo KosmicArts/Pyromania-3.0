@@ -11,6 +11,9 @@ $breakpoint argument choices:
 - tab_port
 - tab_land
 - big_desktop
+
+
+ORDER: base + typography > general layout + grid > page layout > components
 */
 body {
   font-family: 'Montserrat', sans-serif;
@@ -90,14 +93,6 @@ header .hero-text_box .hero-header_secondary {
   font-size: 2.5rem;
   text-align: center;
   margin-bottom: 4rem;
-}
-
-header .btn-box {
-  position: absolute;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  margin-top: 2rem;
-  left: 50%;
 }
 
 header .btn-box_cta {
