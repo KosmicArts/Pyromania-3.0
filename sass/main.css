@@ -156,6 +156,16 @@ header .btn-box_cta {
   height: 2.9rem;
 }
 
+.hamburger {
+  width: 2.5rem;
+}
+
+@media (max-width: 75em) {
+  .hamburger {
+    display: none;
+  }
+}
+
 nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -572,9 +582,5 @@ html {
   html {
     font-size: 75%;
   }
-}
-
-.hide {
-  display: none;
 }
 /*# sourceMappingURL=main.css.map */

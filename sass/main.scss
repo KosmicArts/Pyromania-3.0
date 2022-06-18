@@ -12,6 +12,8 @@
 
 @import "./layout/navbar";
 
+@import "./layout/mobile-navbar";
+
 @import "./layout/section-info";
 
 @import "./layout/section-features";
@@ -52,7 +54,6 @@ html{
     }
 }
 
-.hide{
-    display: none;
-}
-
+// .hide-desktop{
+//     display: none;
+// }

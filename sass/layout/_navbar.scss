@@ -4,6 +4,14 @@
     height: 2.9rem;
 }
 
+.hamburger{
+    width: 2.5rem;
+
+    @include respond(tab_land){
+        display: none;
+    };
+}
+
 nav{
     display: flex;
     justify-content: flex-end;
