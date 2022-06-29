@@ -156,33 +156,42 @@ header .btn-box_cta {
   height: 2.9rem;
 }
 
-.hamburger {
-  width: 2.5rem;
-}
-
-@media (max-width: 75em) {
-  .hamburger {
-    display: none;
-  }
-}
-
 nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   padding: 4rem 1rem;
 }
 
+nav .hamburger {
+  margin-right: 5rem;
+  width: 3rem;
+  height: 3rem;
+  cursor: pointer;
+}
+
+@media (max-width: 75em) {
+  nav .hamburger {
+    display: block;
+  }
+}
+
 nav .nav_links {
   margin-right: auto;
   margin-left: 7rem;
   list-style: none;
+}
+
+@media (max-width: 75em) {
+  nav .nav_links {
+    display: none;
+  }
 }
 
 nav .nav_links_items:hover .nav_links_dropdown {
@@ -283,6 +292,12 @@ nav .acc-box .signup {
 nav .acc-box .signup:hover {
   background-color: #3d3d3d;
   color: #FFC300;
+}
+
+@media (max-width: 75em) {
+  nav .acc-box {
+    display: none;
+  }
 }
 
 .section-info {
@@ -582,5 +597,9 @@ html {
   html {
     font-size: 75%;
   }
+}
+
+.hide-desktop {
+  display: none;
 }
 /*# sourceMappingURL=main.css.map */

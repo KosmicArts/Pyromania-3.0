@@ -4,25 +4,33 @@
     height: 2.9rem;
 }
 
-.hamburger{
-    width: 2.5rem;
-
-    @include respond(tab_land){
-        display: none;
-    };
-}
-
 nav{
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
 
     padding: 4rem 1rem;
+
+    .hamburger{
+        margin-right: 5rem;
+        width: 3rem;
+        height: 3rem;
+        cursor: pointer;
+    
+        @include respond(tab_land){
+            display: block;
+        };
+    }
 
     .nav_links{
         margin-right: auto;
         margin-left: 7rem;
         list-style: none;
+
+        @include respond(tab_land){
+            display: none;
+        }
+
 
         &_items:hover .nav_links_dropdown{
             opacity: 1;
@@ -122,6 +130,10 @@ nav{
             }
             
         }
+        @include respond(tab_land){
+            display: none;
+        }
+
     }
-    
+
 }
