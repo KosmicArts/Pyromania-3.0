@@ -1,7 +1,17 @@
+// styles for the old svg based logo
+// ----------------------------------
+// .logo{
+//     margin-left: 10rem;
+//     cursor: pointer;
+//     height: 2.9rem;
+// }
+
 .logo{
-    margin-left: 10rem;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin-left: 5rem;
     cursor: pointer;
-    height: 2.9rem;
+    color: $color-white;
 }
 
 nav{
