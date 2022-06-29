@@ -171,11 +171,17 @@ nav {
   padding: 4rem 1rem;
 }
 
-nav .hamburger {
-  margin-right: 5rem;
-  width: 3rem;
-  height: 3rem;
-  cursor: pointer;
+nav .hamburger_background {
+  height: 6rem;
+  width: 6rem;
+  border-radius: 60%;
+  position: fixed;
+  top: 3rem;
+  right: 5rem;
+  z-index: 2000;
+  background-color: #EEEEEE;
+  -webkit-box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.3);
+          box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.3);
 }
 
 @media (max-width: 75em) {
