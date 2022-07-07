@@ -171,7 +171,7 @@ nav {
   padding: 4rem 1rem;
 }
 
-nav .hamburger_background {
+nav .navigator_circle {
   height: 6rem;
   width: 6rem;
   border-radius: 60%;
@@ -182,10 +182,48 @@ nav .hamburger_background {
   background-color: #EEEEEE;
   -webkit-box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.3);
           box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  text-align: center;
+}
+
+nav .navigator_icon {
+  position: relative;
+  margin-top: 3rem;
+}
+
+nav .navigator_icon, nav .navigator_icon::before, nav .navigator_icon::after {
+  width: 3rem;
+  height: 2px;
+  background-color: #3d3d3d;
+  display: inline-block;
+}
+
+nav .navigator_icon::before, nav .navigator_icon::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+nav .navigator_icon::before {
+  top: -0.8rem;
+}
+
+nav .navigator_icon::after {
+  top: 0.8rem;
+}
+
+nav .navigator_circle:hover nav .navigator_icon::before {
+  top: -1rem;
+}
+
+nav .navigator_circle:hover nav .navigator_icon::after {
+  top: 1rem;
 }
 
 @media (max-width: 75em) {
-  nav .hamburger {
+  nav .navigator {
     display: block;
   }
 }
