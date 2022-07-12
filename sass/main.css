@@ -214,12 +214,28 @@ nav .navigator_icon::after {
   top: 0.8rem;
 }
 
-nav .navigator_circle:hover nav .navigator_icon::before {
+nav .navigator_circle:hover .navigator_icon::before {
   top: -1rem;
 }
 
-nav .navigator_circle:hover nav .navigator_icon::after {
+nav .navigator_circle:hover .navigator_icon::after {
   top: 1rem;
+}
+
+nav .navigator_checkbox:checked + .navigator_circle .navigator_icon {
+  background-color: transparent;
+}
+
+nav .navigator_checkbox:checked + .navigator_circle .navigator_icon::before {
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+  top: 0;
+}
+
+nav .navigator_checkbox:checked + .navigator_circle .navigator_icon::after {
+  -webkit-transform: rotate(-135deg);
+          transform: rotate(-135deg);
+  top: 0;
 }
 
 @media (max-width: 75em) {

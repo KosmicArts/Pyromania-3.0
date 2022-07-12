@@ -72,16 +72,30 @@ nav{
             }
         }
 
-        // THIS ISNT WORKING WHEN I HOVER WHY???
-        // ICON HOVER ANIMATION ----------------------
-        &_circle:hover &_icon::before{
+        // HAMBURGER LINES EXTEND OUTWARD WHEN THE CIRCLE IS HOVERED
+        &_circle:hover .navigator_icon::before{
             top: -1rem;
         }
 
-        &_circle:hover &_icon::after{
+        &_circle:hover .navigator_icon::after{
             top: 1rem;
         }
-        // -------------------------------------------
+        // -------------------------------------------------
+        // HAMBURGER TO CROSS ANIMATION
+        &_checkbox:checked + .navigator_circle .navigator_icon{
+            background-color: transparent;
+        }
+
+        &_checkbox:checked + .navigator_circle .navigator_icon::before{
+            transform: rotate(135deg);
+            top: 0;
+        }
+
+        &_checkbox:checked + .navigator_circle .navigator_icon::after{
+            transform: rotate(-135deg);
+            top: 0;
+        }
+        // -------------------------------------------------
     
         @include respond(tab_land){
             display: block;
