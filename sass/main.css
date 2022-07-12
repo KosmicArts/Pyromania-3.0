@@ -158,20 +158,7 @@ header .btn-box_cta {
   color: #EEEEEE;
 }
 
-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 4rem 1rem;
-}
-
-nav .navigator_circle {
+.hamburger_circle {
   height: 6rem;
   width: 6rem;
   border-radius: 60%;
@@ -186,19 +173,19 @@ nav .navigator_circle {
   text-align: center;
 }
 
-nav .navigator_icon {
+.hamburger_icon {
   position: relative;
   margin-top: 3rem;
 }
 
-nav .navigator_icon, nav .navigator_icon::before, nav .navigator_icon::after {
+.hamburger_icon, .hamburger_icon::before, .hamburger_icon::after {
   width: 3rem;
   height: 2px;
   background-color: #3d3d3d;
   display: inline-block;
 }
 
-nav .navigator_icon::before, nav .navigator_icon::after {
+.hamburger_icon::before, .hamburger_icon::after {
   content: "";
   position: absolute;
   left: 0;
@@ -206,42 +193,55 @@ nav .navigator_icon::before, nav .navigator_icon::after {
   transition: all 0.2s;
 }
 
-nav .navigator_icon::before {
+.hamburger_icon::before {
   top: -0.8rem;
 }
 
-nav .navigator_icon::after {
+.hamburger_icon::after {
   top: 0.8rem;
 }
 
-nav .navigator_circle:hover .navigator_icon::before {
+.hamburger_circle:hover .hamburger_icon::before {
   top: -1rem;
 }
 
-nav .navigator_circle:hover .navigator_icon::after {
+.hamburger_circle:hover .hamburger_icon::after {
   top: 1rem;
 }
 
-nav .navigator_checkbox:checked + .navigator_circle .navigator_icon {
+.hamburger_checkbox:checked + .hamburger_circle .hamburger_icon {
   background-color: transparent;
 }
 
-nav .navigator_checkbox:checked + .navigator_circle .navigator_icon::before {
+.hamburger_checkbox:checked + .hamburger_circle .hamburger_icon::before {
   -webkit-transform: rotate(135deg);
           transform: rotate(135deg);
   top: 0;
 }
 
-nav .navigator_checkbox:checked + .navigator_circle .navigator_icon::after {
+.hamburger_checkbox:checked + .hamburger_circle .hamburger_icon::after {
   -webkit-transform: rotate(-135deg);
           transform: rotate(-135deg);
   top: 0;
 }
 
 @media (max-width: 75em) {
-  nav .navigator {
+  .hamburger {
     display: block;
   }
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 4rem 1rem;
 }
 
 nav .nav_links {
