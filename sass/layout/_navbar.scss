@@ -32,6 +32,11 @@
         box-shadow: 0 1rem 3rem rgba($color-black, 0.3);
         cursor: pointer;
         text-align: center;
+
+        // The Hamburger will appear at this viewport
+        @media screen and (min-width: 75em){
+            display: none;
+        };
     }
 
     // ICON --------------------------------------------
@@ -88,10 +93,7 @@
         top: 0;
     }
     // -------------------------------------------------
-    // The Hamburger will appear at this viewport
-    @include respond(tab_land){
-        display: block;
-    };
+    
 }
 // ====================================================================
 // DESKTOP NAVIGATOR ==================================================
@@ -105,13 +107,25 @@ nav{
     padding: 4rem 1rem;
 
     .nav_links{
+        display: flex;
+
+        // NAV-LINKS STYLING ON MOBILE VIEWPORT
+        @include respond(tab_land){
+            // display: none;
+
+            position: absolute;
+            right: 0;
+            background-color: $color-lightGrey-0;
+            flex-direction: column;
+            z-index: 1;
+            border-radius: 0.3rem;
+            padding: 0.5rem 0;
+            box-shadow: 0 1rem 3rem rgba($color-black, 0.3);
+        }
+
         margin-right: auto;
         margin-left: 7rem;
         list-style: none;
-
-        @include respond(tab_land){
-            display: none;
-        }
 
         &_items:hover .nav_links_dropdown{
             opacity: 1;
@@ -121,6 +135,15 @@ nav{
         & li{
             display: inline-block;
             padding: 0 2rem;
+
+            // NAV-LINKS LI STYLING FOR MOBILE VIEWPORTS
+            @include respond(tab_land){
+                margin: 0;
+
+                display: block;
+                text-align: center;
+                min-width: 20rem;
+            }
         }
 
         // ===============================================
