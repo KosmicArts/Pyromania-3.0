@@ -189,6 +189,16 @@ nav{
             text-decoration: none;
             transition: all .2s;
 
+            // NAV-LINKS ITEMS STYLING FOR MOBILE VIEWPORTS
+            @include respond(tab_land){
+                color: $color-black;
+
+                // &:hover{
+                //     color: $color-orange;
+                // }
+                
+            }
+
             & i{
                 font-size: 1.3rem;   
             }
