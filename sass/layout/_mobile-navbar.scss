@@ -11,12 +11,65 @@
 
 .mobile_nav{
         position: absolute;
+        background-color: $color-lightGrey-0;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+        border-radius: .5rem;
 
-    & ul{
-        list-style-type: none;
-        text-align: center;
-    }
+        &_title a{
+            font-weight: 600;
+            text-decoration: none;
+            color: $color-darkGrey-1;
+        }
+
+        & ul{
+            width: 30rem;
+            margin: auto;
+            list-style-type: none;
+            text-align: center;
+            font-size: $default-fontSize;
+        }
+
+        & li{
+            margin: 3rem;
+        }
+
+        &_dropdown{
+            background-color: $color-lightGrey-0;
+            border-radius: 0.5rem;
+            margin: 0;
+            width: 20rem;
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            position: absolute;
+    
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        &_acc-box{
+            hr{
+                border-top: 0.1px solid $color-lightGrey-1;
+                width: 90%;
+                margin: auto;
+            }
+
+            &_login{
+                font-weight: 600;
+                text-decoration: none;
+                color: $color-darkGrey-1;
+            }
+
+            &_signup{
+                background-image: linear-gradient(to right, $color-redOrange, $color-red);
+                color: $color-lightGrey-0;
+                text-decoration: none;
+                font-weight: 700;
+                padding: 1rem 2rem;
+                border-radius: 3rem;
+            }
+        }
 }
